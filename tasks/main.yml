@@ -1,0 +1,12 @@
+---
+# tasks file for install_nginx
+- name: "nginx install"
+  yum:
+    name: "nginx"
+    state: "latest"
+
+- name: "nginx start service"
+  service:
+    name: "nginx"
+    state: "latest"
+    enabled: yes
